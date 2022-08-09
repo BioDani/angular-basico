@@ -1,0 +1,28 @@
+<h1>Listado de Heroes</h1>
+
+<section>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item active" aria-current="true" *ngFor="let heroe of heroes; let i = index">
+            {{i+1}}.{{heroe}}
+        </li>
+    </ul>
+
+    <div *ngIf="heroeBorrado.length !== 0">
+        <h1>Heroes borrados</h1>
+
+        <ul>
+            <li *ngFor="let heroe of heroesBorrados; let i = index">
+                {{i+1}}.{{heroe}}
+            </li>
+        </ul>
+  
+    </div>
+
+
+
+</section>
+
+
+<button (click)="borrarHeroe()" type="button" class="btn btn-secondary">
+    Borrar
+</button>

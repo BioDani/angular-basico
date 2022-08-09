@@ -1,0 +1,12 @@
+<h1>{{ titulo }}</h1>
+
+<span>Likes/Dislikes</span>
+<section>
+  <button (click)="acumular(base)" type="button" class="btn btn-primary">
+    +{{ base }}
+  </button>
+  <span> {{ numero }} </span>
+  <button (click)="acumular(-base)" type="button" class="btn btn-primary">
+    -{{ base }}
+  </button>
+</section>
