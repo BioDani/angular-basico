@@ -1,0 +1,5 @@
+<h3>Personas</h3>
+<hr>
+<ul *ngFor="let persona of personas">
+    <li>{{persona.nombre}} - ${{persona.cantidad | number}}COP</li>
+</ul>
